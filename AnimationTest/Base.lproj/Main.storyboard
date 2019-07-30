@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K9f-ZQ-e1f" userLabel="Side Menu View">
+                                <rect key="frame" x="-262.5" y="0.0" width="262.5" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mostafa Mahmoud" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lX7-MR-KlI">
+                                        <rect key="frame" x="51" y="20" width="160.5" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="FYB-qe-9Ma"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.77495551269999996" green="0.37539429699999999" blue="0.49432088089999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="lX7-MR-KlI" firstAttribute="top" secondItem="K9f-ZQ-e1f" secondAttribute="top" constant="20" id="axE-OT-Yg8"/>
+                                    <constraint firstItem="lX7-MR-KlI" firstAttribute="centerX" secondItem="K9f-ZQ-e1f" secondAttribute="centerX" id="whT-5q-Cmu"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZKH-D3-XYb" userLabel="Main View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kip-wj-WiB">
+                                        <rect key="frame" x="8" y="28" width="95" height="95"/>
+                                        <color key="backgroundColor" red="0.31794804329999998" green="0.67179030179999999" blue="0.66108006239999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="95" id="LuX-bG-YMU"/>
+                                            <constraint firstAttribute="width" secondItem="Kip-wj-WiB" secondAttribute="height" multiplier="1:1" id="rcv-zr-QSg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="20"/>
+                                        <state key="normal" title="Side Menu">
+                                            <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="SideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0KK-ln-K3X"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.38739553310000002" green="0.31191555720000003" blue="0.47564673419999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Kip-wj-WiB" firstAttribute="top" secondItem="ZKH-D3-XYb" secondAttribute="top" constant="28" id="Ozj-d3-InA"/>
+                                    <constraint firstItem="Kip-wj-WiB" firstAttribute="leading" secondItem="ZKH-D3-XYb" secondAttribute="leading" constant="8" id="Ret-la-fl0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="K9f-ZQ-e1f" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="C5D-sN-de1"/>
+                            <constraint firstItem="ZKH-D3-XYb" firstAttribute="leading" secondItem="K9f-ZQ-e1f" secondAttribute="trailing" id="Jep-RF-Y0F"/>
+                            <constraint firstItem="ZKH-D3-XYb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LhT-Wf-5Ui"/>
+                            <constraint firstItem="ZKH-D3-XYb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="M0m-7x-uA0"/>
+                            <constraint firstItem="ZKH-D3-XYb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QIe-yK-qrk"/>
+                            <constraint firstItem="K9f-ZQ-e1f" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="R0k-IA-h7E"/>
+                            <constraint firstItem="ZKH-D3-XYb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="msN-FL-Ci8"/>
+                            <constraint firstItem="K9f-ZQ-e1f" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pJ8-DN-QYl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="SideMenuLayout" destination="QIe-yK-qrk" id="ATP-0U-inv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39.200000000000003" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+</document>
